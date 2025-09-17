@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # E-Comm Frontend
 
 A modern, responsive e-commerce frontend built with React, featuring sneakers and accessories. This project replicates the design from the provided image with enhanced functionality and improved user experience.
@@ -239,3 +240,6 @@ This project is licensed under the MIT License.
 ---
 
 **Built with ❤️ using React and modern web technologies**
+=======
+# E-comm
+>>>>>>> 6529a83e579ae4119ea3710c14ed1b7c6951f727
