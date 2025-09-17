@@ -1,0 +1,151 @@
+.header {
+  background-color: #1e40af;
+  color: white;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #93c5fd;
+}
+
+.nav-link.active {
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #93c5fd;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  width: 200px;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-icon,
+.user-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.search-icon:hover,
+.user-icon:hover {
+  color: #93c5fd;
+}
+
+.cart-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.cart-section:hover {
+  color: #93c5fd;
+}
+
+.cart-icon {
+  font-size: 1.2rem;
+}
+
+.cart-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  
+  .header-content {
+    padding: 0.75rem 0;
+  }
+  
+  .logo h1 {
+    font-size: 1.25rem;
+  }
+  
+  .header-right {
+    gap: 1rem;
+  }
+}
